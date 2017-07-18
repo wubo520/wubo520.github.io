@@ -10,6 +10,10 @@
 
     <!--Description-->
     
+        <meta name="description" content="==================Git  分布式代码管理  复杂    https://git-for-windows.github.io/    安装：        无限下一步    验证是否安装完成        桌面右键  git选项
+git GUI     图形界面
+git Bash ">
+    
 
     <!--Author-->
     
@@ -18,7 +22,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="我的第一个博客日志"/>
+        <meta property="og:title" content="git使用"/>
     
 
     <!--Open Graph Description-->
@@ -40,7 +44,7 @@
 
     <!-- Title -->
     
-    <title>我的第一个博客日志 - web项目笔记</title>
+    <title>git使用 - web项目笔记</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -150,7 +154,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>我的第一个博客日志</h1>
+                    <h1>git使用</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
@@ -178,7 +182,105 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                
+                <p>==================<br>Git  分布式代码管理  复杂<br>    <a href="https://git-for-windows.github.io/" target="_blank" rel="external">https://git-for-windows.github.io/</a><br>    安装：<br>        无限下一步<br>    验证是否安装完成<br>        桌面右键  git选项</p>
+<pre><code>git GUI     图形界面
+git Bash    命令行（linux）  √
+    打开命令
+        输入命令
+            gir --version
+</code></pre><p>GitHub<br>    想玩好github必须有两个邮箱<br>        最好用sina邮箱<br>            主邮箱<br>                itabel@sina.com<br>            次邮箱<br>                abel1116@sina.cn<br>    官网<br>        <a href="https://github.com/" target="_blank" rel="external">https://github.com/</a><br>        创建gitbug账号<br>            输入<br>                用户名<br>                主邮箱<br>                密码          字母+数字  八位以上<br>        配置邮箱<br>            点击头像<br>                选择settings<br>            点击Emails<br>                登录主邮箱       点击激活<br>                添加次邮箱<br>                    Add email address<br>                登录次邮箱       点击激活</p>
+<pre><code>    生成秘钥
+        点击头像
+            选择settings
+        点击 SSH and GPG keys
+
+        打开 Git Bash
+            输入
+                ssh-keygen -t rsa -C&quot;主邮箱&quot;
+            一路回车
+                秘钥生成完毕
+
+            用户目录下有一个.ssh文件夹
+                目录下有俩文件
+                    id_rsa
+                    id_rsa.pub  √
+                    不能使用编辑器打开，只能使用记事本
+
+                    把内容都复制
+                    把复制的内容粘贴到key中
+                    点击add
+    配置
+        打开Git Bash命令行
+        查看配置
+            git config -l
+        需要配置name和email
+        配置name
+            git config --global user.name &quot;名字&quot;
+        配置email
+            git config --global user.email &quot;主邮箱&quot;
+        验证是否成功
+            git config -l
+            找到name和email
+本地项目传到github上
+    点击头像边上的加号
+    选择 New Repository
+
+    填写项目名
+    填写描述
+
+    选择Public
+
+    点击 Create repository
+
+    创建文件
+        README
+
+    需要输入命令
+        打开Git bash命令
+        输入提示的命令
+        项目上传
+
+    需要上传
+        git add 文件名
+        git add .       所有文件
+        git commit -m&quot;url&quot;
+        git push
+ 最终版上传
+</code></pre><p>echo # MyProject &gt;&gt; README.md</p>
+<p>git init</p>
+<p>git add README.md</p>
+<p>git commit -m “first commit”</p>
+<hr>
+<p>git remote add origin  <a href="https://github.com/springleft/douban" target="_blank" rel="external">https://github.com/springleft/douban</a></p>
+<p>git pull origin master（如果出错：git pull –rebase origin master）</p>
+<p>git push -u origin master    </p>
+<pre><code>下载文件
+    点击项目中 clone or downloaded
+    点击复制按钮
+    打开命令
+    输入  git clone 复制过来的网址
+
+    更新代码
+        git pull
+
+上传
+    git add .
+    git commit -m&quot;项目描述&quot;
+    git push        
+更新代码
+    git pull
+
+创建github个人站
+    项目名
+        用户名.github.com
+    描述尽量写的清除一点
+
+    创建
+        点击settings
+        点击Launch automatic page generator
+        选择模板
+        点击publish page 
+</code></pre>
 
                 
             </div>
